@@ -1,0 +1,1 @@
+/home/sen/ros/hand_arm_ws/devel/.private/panda_test/lib/pkgconfig/panda_test.pc

@@ -1,0 +1,8 @@
+prefix=/home/sen/ros/hand_arm_ws/devel/.private/panda_allergo_v1
+
+Name: panda_allergo_v1
+Description: Description of panda_allergo_v1
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,5 @@
+my_test_package
+/home/sen/ros/hand_arm_ws/devel/.private/my_test_package/cmake.lock /home/sen/ros/hand_arm_ws/devel/./cmake.lock
+/home/sen/ros/hand_arm_ws/devel/.private/my_test_package/share/my_test_package/cmake/my_test_packageConfig.cmake /home/sen/ros/hand_arm_ws/devel/share/my_test_package/cmake/my_test_packageConfig.cmake
+/home/sen/ros/hand_arm_ws/devel/.private/my_test_package/share/my_test_package/cmake/my_test_packageConfig-version.cmake /home/sen/ros/hand_arm_ws/devel/share/my_test_package/cmake/my_test_packageConfig-version.cmake
+/home/sen/ros/hand_arm_ws/devel/.private/my_test_package/lib/pkgconfig/my_test_package.pc /home/sen/ros/hand_arm_ws/devel/lib/pkgconfig/my_test_package.pc

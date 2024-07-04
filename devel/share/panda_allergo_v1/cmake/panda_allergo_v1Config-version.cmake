@@ -1,0 +1,1 @@
+/home/sen/ros/hand_arm_ws/devel/.private/panda_allergo_v1/share/panda_allergo_v1/cmake/panda_allergo_v1Config-version.cmake

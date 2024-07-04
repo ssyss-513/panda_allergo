@@ -1,0 +1,1 @@
+/home/sen/ros/hand_arm_ws/devel/.private/panda_allergo_v1_1/lib/pkgconfig/panda_allergo_v1_1.pc

@@ -1,0 +1,8 @@
+prefix=/home/sen/ros/hand_arm_ws/devel/.private/panda_test
+
+Name: panda_test
+Description: Description of panda_test
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,5 @@
+panda_allergo_v2
+/home/sen/ros/hand_arm_ws/devel/.private/panda_allergo_v2/cmake.lock /home/sen/ros/hand_arm_ws/devel/./cmake.lock
+/home/sen/ros/hand_arm_ws/devel/.private/panda_allergo_v2/share/panda_allergo_v2/cmake/panda_allergo_v2Config-version.cmake /home/sen/ros/hand_arm_ws/devel/share/panda_allergo_v2/cmake/panda_allergo_v2Config-version.cmake
+/home/sen/ros/hand_arm_ws/devel/.private/panda_allergo_v2/share/panda_allergo_v2/cmake/panda_allergo_v2Config.cmake /home/sen/ros/hand_arm_ws/devel/share/panda_allergo_v2/cmake/panda_allergo_v2Config.cmake
+/home/sen/ros/hand_arm_ws/devel/.private/panda_allergo_v2/lib/pkgconfig/panda_allergo_v2.pc /home/sen/ros/hand_arm_ws/devel/lib/pkgconfig/panda_allergo_v2.pc

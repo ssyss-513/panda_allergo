@@ -1,0 +1,8 @@
+prefix=/home/sen/ros/hand_arm_ws/install
+
+Name: panda_allegro
+Description: Description of panda_allegro
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

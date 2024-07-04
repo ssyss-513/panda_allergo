@@ -1,0 +1,1 @@
+/home/sen/ros/hand_arm_ws/devel/.private/panda_allegro/share/panda_allegro/cmake/panda_allegroConfig-version.cmake

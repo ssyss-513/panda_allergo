@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="hand">
+  <xacro:include filename="$(find allegro_hand_description)/common/utils.xacro" />
+  <xacro:include filename="allegro_hand_description_left.xacro"/>
+  <xacro:allegro_hand_description_left arm_id="panda" safety_distance="0.03"/>
+</robot>

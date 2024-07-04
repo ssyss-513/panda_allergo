@@ -1,0 +1,8 @@
+prefix=/home/sen/ros/hand_arm_ws/install
+
+Name: my_test_package
+Description: Description of my_test_package
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
