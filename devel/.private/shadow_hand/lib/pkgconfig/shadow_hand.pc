@@ -1,0 +1,8 @@
+prefix=/home/sen/ros/hand_arm_ws/devel/.private/shadow_hand
+
+Name: shadow_hand
+Description: Description of shadow_hand
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

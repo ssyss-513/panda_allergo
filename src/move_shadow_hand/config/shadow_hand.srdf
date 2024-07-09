@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="shadow_hand">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="hand">
+        <link name="base_link"/>
+        <link name="palm"/>
+        <link name="index_finger_knuckle"/>
+        <link name="index_finger_proximal"/>
+        <link name="index_finger_middle"/>
+        <link name="index_finger_distal"/>
+        <link name="little_finger_metacarpal"/>
+        <link name="little_finger_knuckle"/>
+        <link name="little_finger_proximal"/>
+        <link name="little_finger_middle"/>
+        <link name="little_finger_distal"/>
+        <link name="middle_finger_knuckle"/>
+        <link name="middle_finger_proximal"/>
+        <link name="middle_finger_middle"/>
+        <link name="middle_finger_distal"/>
+        <link name="ring_finger_knuckle"/>
+        <link name="ring_finger_proximal"/>
+        <link name="ring_finger_middle"/>
+        <link name="ring_finger_distal"/>
+        <link name="thumb_base"/>
+        <link name="thumb_proximal"/>
+        <link name="thumb_hub"/>
+        <link name="thumb_middle"/>
+        <link name="thumb_distal"/>
+    </group>
+    <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="pick" group="hand">
+        <joint name="index_finger_join2" value="1.4778"/>
+        <joint name="index_finger_joint1" value="0"/>
+        <joint name="index_finger_joint3" value="0.948"/>
+        <joint name="index_finger_joint4" value="0.9015"/>
+        <joint name="little_finger_joint1" value="0.1069"/>
+        <joint name="little_finger_joint2" value="-0.2228"/>
+        <joint name="little_finger_joint3" value="1.3383"/>
+        <joint name="little_finger_joint4" value="0.6227"/>
+        <joint name="little_finger_joint5" value="1.106"/>
+        <joint name="middle_finger_joint1" value="0.1508"/>
+        <joint name="middle_finger_joint2" value="1.3881"/>
+        <joint name="middle_finger_joint3" value="1.2787"/>
+        <joint name="middle_finger_joint4" value="0.5391"/>
+        <joint name="ring_finger_joint1" value="-0.349"/>
+        <joint name="ring_finger_joint2" value="1.3662"/>
+        <joint name="ring_finger_joint3" value="0.5729"/>
+        <joint name="ring_finger_joint4" value="1.2361"/>
+        <joint name="thumb_joint1" value="0"/>
+        <joint name="thumb_joint2" value="1.2217"/>
+        <joint name="thumb_joint3" value="0.2094"/>
+        <joint name="thumb_joint4" value="0.0537"/>
+        <joint name="thumb_joint5" value="1.0595"/>
+    </group_state>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="hand" parent_link="base_link" group="hand"/>
+    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+    <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base_link"/>
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="index_finger_distal" link2="index_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_distal" link2="index_finger_middle" reason="Adjacent"/>
+    <disable_collisions link1="index_finger_distal" link2="index_finger_proximal" reason="Never"/>
+    <disable_collisions link1="index_finger_distal" link2="little_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_distal" link2="little_finger_metacarpal" reason="Never"/>
+    <disable_collisions link1="index_finger_distal" link2="little_finger_proximal" reason="Never"/>
+    <disable_collisions link1="index_finger_distal" link2="middle_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_distal" link2="palm" reason="Never"/>
+    <disable_collisions link1="index_finger_distal" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_distal" link2="ring_finger_proximal" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="index_finger_middle" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="index_finger_proximal" reason="Adjacent"/>
+    <disable_collisions link1="index_finger_knuckle" link2="little_finger_distal" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="little_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="little_finger_metacarpal" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="little_finger_middle" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="little_finger_proximal" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="middle_finger_distal" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="middle_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="middle_finger_middle" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="middle_finger_proximal" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="palm" reason="Adjacent"/>
+    <disable_collisions link1="index_finger_knuckle" link2="ring_finger_distal" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="ring_finger_middle" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="ring_finger_proximal" reason="Never"/>
+    <disable_collisions link1="index_finger_knuckle" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="index_finger_middle" link2="index_finger_proximal" reason="Adjacent"/>
+    <disable_collisions link1="index_finger_middle" link2="little_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_middle" link2="little_finger_metacarpal" reason="Never"/>
+    <disable_collisions link1="index_finger_middle" link2="little_finger_proximal" reason="Never"/>
+    <disable_collisions link1="index_finger_middle" link2="middle_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_middle" link2="palm" reason="Never"/>
+    <disable_collisions link1="index_finger_middle" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_middle" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="index_finger_proximal" link2="little_finger_distal" reason="Never"/>
+    <disable_collisions link1="index_finger_proximal" link2="little_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_proximal" link2="little_finger_metacarpal" reason="Never"/>
+    <disable_collisions link1="index_finger_proximal" link2="little_finger_middle" reason="Never"/>
+    <disable_collisions link1="index_finger_proximal" link2="little_finger_proximal" reason="Never"/>
+    <disable_collisions link1="index_finger_proximal" link2="palm" reason="Default"/>
+    <disable_collisions link1="index_finger_proximal" link2="ring_finger_distal" reason="Never"/>
+    <disable_collisions link1="index_finger_proximal" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="index_finger_proximal" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="little_finger_distal" link2="little_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="little_finger_distal" link2="little_finger_metacarpal" reason="Never"/>
+    <disable_collisions link1="little_finger_distal" link2="little_finger_middle" reason="Adjacent"/>
+    <disable_collisions link1="little_finger_distal" link2="little_finger_proximal" reason="Never"/>
+    <disable_collisions link1="little_finger_distal" link2="middle_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="little_finger_distal" link2="palm" reason="Never"/>
+    <disable_collisions link1="little_finger_distal" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="little_finger_distal" link2="thumb_middle" reason="Never"/>
+    <disable_collisions link1="little_finger_distal" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="little_finger_knuckle" link2="little_finger_metacarpal" reason="Adjacent"/>
+    <disable_collisions link1="little_finger_knuckle" link2="little_finger_middle" reason="Never"/>
+    <disable_collisions link1="little_finger_knuckle" link2="little_finger_proximal" reason="Adjacent"/>
+    <disable_collisions link1="little_finger_knuckle" link2="middle_finger_distal" reason="Never"/>
+    <disable_collisions link1="little_finger_knuckle" link2="middle_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="little_finger_knuckle" link2="middle_finger_middle" reason="Never"/>
+    <disable_collisions link1="little_finger_knuckle" link2="middle_finger_proximal" reason="Never"/>
+    <disable_collisions link1="little_finger_knuckle" link2="palm" reason="Never"/>
+    <disable_collisions link1="little_finger_knuckle" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="little_finger_knuckle" link2="ring_finger_middle" reason="Never"/>
+    <disable_collisions link1="little_finger_knuckle" link2="thumb_distal" reason="Never"/>
+    <disable_collisions link1="little_finger_knuckle" link2="thumb_middle" reason="Never"/>
+    <disable_collisions link1="little_finger_knuckle" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="little_finger_middle" reason="Never"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="little_finger_proximal" reason="Default"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="middle_finger_distal" reason="Never"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="middle_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="middle_finger_middle" reason="Never"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="middle_finger_proximal" reason="Never"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="palm" reason="Adjacent"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="ring_finger_middle" reason="Never"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="ring_finger_proximal" reason="Never"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="thumb_distal" reason="Never"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="thumb_middle" reason="Never"/>
+    <disable_collisions link1="little_finger_metacarpal" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="little_finger_middle" link2="little_finger_proximal" reason="Adjacent"/>
+    <disable_collisions link1="little_finger_middle" link2="middle_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="little_finger_middle" link2="palm" reason="Never"/>
+    <disable_collisions link1="little_finger_middle" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="little_finger_middle" link2="thumb_middle" reason="Never"/>
+    <disable_collisions link1="little_finger_middle" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="little_finger_proximal" link2="middle_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="little_finger_proximal" link2="palm" reason="Never"/>
+    <disable_collisions link1="little_finger_proximal" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="middle_finger_distal" link2="middle_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="middle_finger_distal" link2="middle_finger_middle" reason="Adjacent"/>
+    <disable_collisions link1="middle_finger_distal" link2="middle_finger_proximal" reason="Never"/>
+    <disable_collisions link1="middle_finger_distal" link2="palm" reason="Never"/>
+    <disable_collisions link1="middle_finger_distal" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="middle_finger_knuckle" link2="middle_finger_middle" reason="Never"/>
+    <disable_collisions link1="middle_finger_knuckle" link2="middle_finger_proximal" reason="Adjacent"/>
+    <disable_collisions link1="middle_finger_knuckle" link2="palm" reason="Adjacent"/>
+    <disable_collisions link1="middle_finger_knuckle" link2="ring_finger_distal" reason="Never"/>
+    <disable_collisions link1="middle_finger_knuckle" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="middle_finger_knuckle" link2="ring_finger_middle" reason="Never"/>
+    <disable_collisions link1="middle_finger_knuckle" link2="thumb_middle" reason="Never"/>
+    <disable_collisions link1="middle_finger_knuckle" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="middle_finger_middle" link2="middle_finger_proximal" reason="Adjacent"/>
+    <disable_collisions link1="middle_finger_middle" link2="palm" reason="Never"/>
+    <disable_collisions link1="middle_finger_middle" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="middle_finger_middle" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="middle_finger_proximal" link2="palm" reason="Default"/>
+    <disable_collisions link1="middle_finger_proximal" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="middle_finger_proximal" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="palm" link2="ring_finger_distal" reason="Never"/>
+    <disable_collisions link1="palm" link2="ring_finger_knuckle" reason="Adjacent"/>
+    <disable_collisions link1="palm" link2="ring_finger_middle" reason="Never"/>
+    <disable_collisions link1="palm" link2="ring_finger_proximal" reason="Default"/>
+    <disable_collisions link1="palm" link2="thumb_proximal" reason="Adjacent"/>
+    <disable_collisions link1="ring_finger_distal" link2="ring_finger_knuckle" reason="Never"/>
+    <disable_collisions link1="ring_finger_distal" link2="ring_finger_middle" reason="Adjacent"/>
+    <disable_collisions link1="ring_finger_distal" link2="ring_finger_proximal" reason="Never"/>
+    <disable_collisions link1="ring_finger_distal" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="ring_finger_knuckle" link2="ring_finger_middle" reason="Never"/>
+    <disable_collisions link1="ring_finger_knuckle" link2="ring_finger_proximal" reason="Adjacent"/>
+    <disable_collisions link1="ring_finger_knuckle" link2="thumb_middle" reason="Never"/>
+    <disable_collisions link1="ring_finger_knuckle" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="ring_finger_middle" link2="ring_finger_proximal" reason="Adjacent"/>
+    <disable_collisions link1="ring_finger_middle" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="ring_finger_proximal" link2="thumb_middle" reason="Never"/>
+    <disable_collisions link1="ring_finger_proximal" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="thumb_distal" link2="thumb_middle" reason="Adjacent"/>
+    <disable_collisions link1="thumb_distal" link2="thumb_proximal" reason="Never"/>
+    <disable_collisions link1="thumb_middle" link2="thumb_proximal" reason="Adjacent"/>
+</robot>

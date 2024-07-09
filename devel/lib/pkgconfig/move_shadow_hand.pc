@@ -1,0 +1,1 @@
+/home/sen/ros/hand_arm_ws/devel/.private/move_shadow_hand/lib/pkgconfig/move_shadow_hand.pc

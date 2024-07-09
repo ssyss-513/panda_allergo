@@ -1,0 +1,1 @@
+/home/sen/ros/hand_arm_ws/devel/.private/move_shadow_hand/share/move_shadow_hand/cmake/move_shadow_handConfig-version.cmake

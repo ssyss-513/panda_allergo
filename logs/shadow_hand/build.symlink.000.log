@@ -1,0 +1,3 @@
+Symlinking /home/sen/ros/hand_arm_ws/devel/share/shadow_hand/cmake/shadow_handConfig-version.cmake
+Symlinking /home/sen/ros/hand_arm_ws/devel/share/shadow_hand/cmake/shadow_handConfig.cmake
+Symlinking /home/sen/ros/hand_arm_ws/devel/lib/pkgconfig/shadow_hand.pc
