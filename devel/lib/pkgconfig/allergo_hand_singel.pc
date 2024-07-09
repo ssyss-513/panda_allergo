@@ -1,0 +1,1 @@
+/home/sen/ros/hand_arm_ws/devel/.private/allergo_hand_singel/lib/pkgconfig/allergo_hand_singel.pc

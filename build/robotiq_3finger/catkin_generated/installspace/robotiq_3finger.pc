@@ -1,0 +1,8 @@
+prefix=/home/sen/ros/hand_arm_ws/install
+
+Name: robotiq_3finger
+Description: Description of robotiq_3finger
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

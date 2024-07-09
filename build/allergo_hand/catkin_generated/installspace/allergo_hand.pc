@@ -1,0 +1,8 @@
+prefix=/home/sen/ros/hand_arm_ws/install
+
+Name: allergo_hand
+Description: Description of allergo_hand
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

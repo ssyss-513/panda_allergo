@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: allegro_hand_description
+    relative_path: panda/panda.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/panda.srdf
+  CONFIG:
+    author_name: arm
+    author_email: q@1.com
+    generated_timestamp: 1720168762

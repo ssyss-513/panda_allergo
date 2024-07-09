@@ -1,0 +1,5 @@
+allergo_hand_singel
+/home/sen/ros/hand_arm_ws/devel/.private/allergo_hand_singel/cmake.lock /home/sen/ros/hand_arm_ws/devel/./cmake.lock
+/home/sen/ros/hand_arm_ws/devel/.private/allergo_hand_singel/share/allergo_hand_singel/cmake/allergo_hand_singelConfig.cmake /home/sen/ros/hand_arm_ws/devel/share/allergo_hand_singel/cmake/allergo_hand_singelConfig.cmake
+/home/sen/ros/hand_arm_ws/devel/.private/allergo_hand_singel/share/allergo_hand_singel/cmake/allergo_hand_singelConfig-version.cmake /home/sen/ros/hand_arm_ws/devel/share/allergo_hand_singel/cmake/allergo_hand_singelConfig-version.cmake
+/home/sen/ros/hand_arm_ws/devel/.private/allergo_hand_singel/lib/pkgconfig/allergo_hand_singel.pc /home/sen/ros/hand_arm_ws/devel/lib/pkgconfig/allergo_hand_singel.pc

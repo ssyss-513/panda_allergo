@@ -1,0 +1,1 @@
+/home/sen/ros/hand_arm_ws/devel/.private/allergo_hand_singel/share/allergo_hand_singel/cmake/allergo_hand_singelConfig.cmake

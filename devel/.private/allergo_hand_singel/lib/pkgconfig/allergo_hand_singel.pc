@@ -1,0 +1,8 @@
+prefix=/home/sen/ros/hand_arm_ws/devel/.private/allergo_hand_singel
+
+Name: allergo_hand_singel
+Description: Description of allergo_hand_singel
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

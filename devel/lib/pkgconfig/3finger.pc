@@ -1,0 +1,1 @@
+/home/sen/ros/hand_arm_ws/devel/.private/3finger/lib/pkgconfig/3finger.pc

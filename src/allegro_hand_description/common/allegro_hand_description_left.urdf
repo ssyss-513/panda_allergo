@@ -46,7 +46,7 @@ and one fixed link will be added for the tip. -->
   <!-- FINGERS -->
   <!-- RIGHT HAND due to which finger is number 0 -->
   <!-- for LEFT HAND switch the sign of the **offset_origin_y** and **finger_angle_r** parameters-->
-  <link name="link_8.0">
+  <link name="link_8">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_0.0.STL"/>
@@ -60,14 +60,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.0082"/>
     </collision>
   </link>
-  <joint name="joint_8.0" type="revolute">
+  <joint name="joint_8" type="revolute">
     <axis xyz="0 0 1"/>
     <limit effort="0" lower="-0.47" upper="0.47" velocity="0"/>
     <parent link="base_link"/>
-    <child link="link_8.0"/>
+    <child link="link_8"/>
     <origin rpy="-0.08726646255 0 0" xyz="0 0.0435 -0.001542"/>
   </joint>
-  <link name="link_9.0">
+  <link name="link_9">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_1.0.STL"/>
@@ -81,14 +81,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.027"/>
     </collision>
   </link>
-  <joint name="joint_9.0" type="revolute">
+  <joint name="joint_9" type="revolute">
     <limit effort="0" lower="-0.196" upper="1.61" velocity="0"/>
     <axis xyz="0 1 0"/>
-    <parent link="link_8.0"/>
-    <child link="link_9.0"/>
+    <parent link="link_8"/>
+    <child link="link_9"/>
     <origin xyz="0 0 0.0164"/>
   </joint>
-  <link name="link_10.0">
+  <link name="link_10">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_2.0.STL"/>
@@ -102,14 +102,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.0192"/>
     </collision>
   </link>
-  <joint name="joint_10.0" type="revolute">
+  <joint name="joint_10" type="revolute">
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-0.174" upper="1.709" velocity="0"/>
-    <parent link="link_9.0"/>
-    <child link="link_10.0"/>
+    <parent link="link_9"/>
+    <child link="link_10"/>
     <origin xyz="0 0 0.054"/>
   </joint>
-  <link name="link_11.0">
+  <link name="link_11">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_3.0.STL"/>
@@ -123,14 +123,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.01335"/>
     </collision>
   </link>
-  <joint name="joint_11.0" type="revolute">
+  <joint name="joint_11" type="revolute">
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-0.227" upper="1.618" velocity="0"/>
-    <parent link="link_10.0"/>
-    <child link="link_11.0"/>
+    <parent link="link_10"/>
+    <child link="link_11"/>
     <origin xyz="0 0 0.0384"/>
   </joint>
-  <link name="link_11.0_tip">
+  <link name="link_11_tip">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_3.0_tip.STL"/>
@@ -145,12 +145,12 @@ and one fixed link will be added for the tip. -->
       </geometry>
     </collision>
   </link>
-  <joint name="joint_11.0_tip" type="fixed">
-    <parent link="link_11.0"/>
-    <child link="link_11.0_tip"/>
+  <joint name="joint_11_tip" type="fixed">
+    <parent link="link_11"/>
+    <child link="link_11_tip"/>
     <origin rpy="0 0 0" xyz="0 0 0.0267"/>
   </joint>
-  <link name="link_4.0">
+  <link name="link_4">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_0.0.STL"/>
@@ -164,14 +164,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.0082"/>
     </collision>
   </link>
-  <joint name="joint_4.0" type="revolute">
+  <joint name="joint_4" type="revolute">
     <axis xyz="0 0 1"/>
     <limit effort="0" lower="-0.47" upper="0.47" velocity="0"/>
     <parent link="base_link"/>
-    <child link="link_4.0"/>
+    <child link="link_4"/>
     <origin rpy="0.0 0 0" xyz="0 0 0.0007"/>
   </joint>
-  <link name="link_5.0">
+  <link name="link_5">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_1.0.STL"/>
@@ -185,14 +185,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.027"/>
     </collision>
   </link>
-  <joint name="joint_5.0" type="revolute">
+  <joint name="joint_5" type="revolute">
     <limit effort="0" lower="-0.196" upper="1.61" velocity="0"/>
     <axis xyz="0 1 0"/>
-    <parent link="link_4.0"/>
-    <child link="link_5.0"/>
+    <parent link="link_4"/>
+    <child link="link_5"/>
     <origin xyz="0 0 0.0164"/>
   </joint>
-  <link name="link_6.0">
+  <link name="link_6">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_2.0.STL"/>
@@ -206,14 +206,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.0192"/>
     </collision>
   </link>
-  <joint name="joint_6.0" type="revolute">
+  <joint name="joint_6" type="revolute">
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-0.174" upper="1.709" velocity="0"/>
-    <parent link="link_5.0"/>
-    <child link="link_6.0"/>
+    <parent link="link_5"/>
+    <child link="link_6"/>
     <origin xyz="0 0 0.054"/>
   </joint>
-  <link name="link_7.0">
+  <link name="link_7">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_3.0.STL"/>
@@ -227,14 +227,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.01335"/>
     </collision>
   </link>
-  <joint name="joint_7.0" type="revolute">
+  <joint name="joint_7" type="revolute">
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-0.227" upper="1.618" velocity="0"/>
-    <parent link="link_6.0"/>
-    <child link="link_7.0"/>
+    <parent link="link_6"/>
+    <child link="link_7"/>
     <origin xyz="0 0 0.0384"/>
   </joint>
-  <link name="link_7.0_tip">
+  <link name="link_7_tip">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_3.0_tip.STL"/>
@@ -249,12 +249,12 @@ and one fixed link will be added for the tip. -->
       </geometry>
     </collision>
   </link>
-  <joint name="joint_7.0_tip" type="fixed">
-    <parent link="link_7.0"/>
-    <child link="link_7.0_tip"/>
+  <joint name="joint_7_tip" type="fixed">
+    <parent link="link_7"/>
+    <child link="link_7_tip"/>
     <origin rpy="0 0 0" xyz="0 0 0.0267"/>
   </joint>
-  <link name="link_0.0">
+  <link name="link_0">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_0.0.STL"/>
@@ -268,14 +268,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.0082"/>
     </collision>
   </link>
-  <joint name="joint_0.0" type="revolute">
+  <joint name="joint_0" type="revolute">
     <axis xyz="0 0 1"/>
     <limit effort="0" lower="-0.47" upper="0.47" velocity="0"/>
     <parent link="base_link"/>
-    <child link="link_0.0"/>
+    <child link="link_0"/>
     <origin rpy="0.08726646255 0 0" xyz="0 -0.0435 -0.001542"/>
   </joint>
-  <link name="link_1.0">
+  <link name="link_1">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_1.0.STL"/>
@@ -289,14 +289,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.027"/>
     </collision>
   </link>
-  <joint name="joint_1.0" type="revolute">
+  <joint name="joint_1" type="revolute">
     <limit effort="0" lower="-0.196" upper="1.61" velocity="0"/>
     <axis xyz="0 1 0"/>
-    <parent link="link_0.0"/>
-    <child link="link_1.0"/>
+    <parent link="link_0"/>
+    <child link="link_1"/>
     <origin xyz="0 0 0.0164"/>
   </joint>
-  <link name="link_2.0">
+  <link name="link_2">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_2.0.STL"/>
@@ -310,14 +310,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.0192"/>
     </collision>
   </link>
-  <joint name="joint_2.0" type="revolute">
+  <joint name="joint_2" type="revolute">
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-0.174" upper="1.709" velocity="0"/>
-    <parent link="link_1.0"/>
-    <child link="link_2.0"/>
+    <parent link="link_1"/>
+    <child link="link_2"/>
     <origin xyz="0 0 0.054"/>
   </joint>
-  <link name="link_3.0">
+  <link name="link_3">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_3.0.STL"/>
@@ -331,14 +331,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.01335"/>
     </collision>
   </link>
-  <joint name="joint_3.0" type="revolute">
+  <joint name="joint_3" type="revolute">
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-0.227" upper="1.618" velocity="0"/>
-    <parent link="link_2.0"/>
-    <child link="link_3.0"/>
+    <parent link="link_2"/>
+    <child link="link_3"/>
     <origin xyz="0 0 0.0384"/>
   </joint>
-  <link name="link_3.0_tip">
+  <link name="link_3_tip">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_3.0_tip.STL"/>
@@ -353,9 +353,9 @@ and one fixed link will be added for the tip. -->
       </geometry>
     </collision>
   </link>
-  <joint name="joint_3.0_tip" type="fixed">
-    <parent link="link_3.0"/>
-    <child link="link_3.0_tip"/>
+  <joint name="joint_3_tip" type="fixed">
+    <parent link="link_3"/>
+    <child link="link_3_tip"/>
     <origin rpy="0 0 0" xyz="0 0 0.0267"/>
   </joint>
   <!-- THUMB -->
@@ -377,7 +377,7 @@ and one fixed link will be added for the tip. -->
 	finger_angle_p=		"-${100*DEG2RAD}"	
 	finger_angle_y=		"${0*DEG2RAD}"
 	-->
-  <link name="link_12.0">
+  <link name="link_12">
     <visual>
       <geometry>
         <!-- RIGHT -->
@@ -400,14 +400,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="-0.0179 -0.009 0.0145"/>
     </collision>
   </link>
-  <joint name="joint_12.0" type="revolute">
+  <joint name="joint_12" type="revolute">
     <axis xyz="+1 0 0"/>
     <limit effort="0" lower="0.263" upper="1.396" velocity="0"/>
     <parent link="base_link"/>
-    <child link="link_12.0"/>
+    <child link="link_12"/>
     <origin rpy="0 -1.65806278845 1.5707963259" xyz="-0.0182 -0.019333 -0.045987"/>
   </joint>
-  <link name="link_13.0">
+  <link name="link_13">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_13.0.STL"/>
@@ -423,17 +423,17 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.00885"/>
     </collision>
   </link>
-  <joint name="joint_13.0" type="revolute">
+  <joint name="joint_13" type="revolute">
     <axis xyz="0 0 -1"/>
     <limit effort="0" lower="-0.105" upper="1.163" velocity="0"/>
-    <parent link="link_12.0"/>
-    <child link="link_13.0"/>
+    <parent link="link_12"/>
+    <child link="link_13"/>
     <!-- RIGHT -->
     <!-- <origin xyz="-0.027 0.005 0.0399"/> -->
     <!-- LEFT -->
     <origin xyz="-0.027 -0.005 0.0399"/>
   </joint>
-  <link name="link_14.0">
+  <link name="link_14">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_14.0.STL"/>
@@ -448,14 +448,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.0257"/>
     </collision>
   </link>
-  <joint name="joint_14.0" type="revolute">
+  <joint name="joint_14" type="revolute">
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-0.189" upper="1.644" velocity="0"/>
-    <parent link="link_13.0"/>
-    <child link="link_14.0"/>
+    <parent link="link_13"/>
+    <child link="link_14"/>
     <origin xyz="0 0 0.0177"/>
   </joint>
-  <link name="link_15.0">
+  <link name="link_15">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_15.0.STL"/>
@@ -470,14 +470,14 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0.02115"/>
     </collision>
   </link>
-  <joint name="joint_15.0" type="revolute">
+  <joint name="joint_15" type="revolute">
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-0.162" upper="1.719" velocity="0"/>
-    <parent link="link_14.0"/>
-    <child link="link_15.0"/>
+    <parent link="link_14"/>
+    <child link="link_15"/>
     <origin xyz="0 0 0.0514"/>
   </joint>
-  <link name="link_15.0_tip">
+  <link name="link_15_tip">
     <visual>
       <geometry>
         <mesh filename="package://allegro_hand_description/meshes/link_15.0_tip.STL"/>
@@ -493,9 +493,9 @@ and one fixed link will be added for the tip. -->
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
   </link>
-  <joint name="joint_15.0_tip" type="fixed">
-    <parent link="link_15.0"/>
-    <child link="link_15.0_tip"/>
+  <joint name="joint_15_tip" type="fixed">
+    <parent link="link_15"/>
+    <child link="link_15_tip"/>
     <origin rpy="0 0 0" xyz="0 0 0.0423"/>
     <!--0.0267000000000005-->
   </joint>

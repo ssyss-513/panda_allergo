@@ -1,0 +1,3 @@
+Symlinking /home/sen/ros/hand_arm_ws/devel/share/panda_arm/cmake/panda_armConfig.cmake
+Symlinking /home/sen/ros/hand_arm_ws/devel/share/panda_arm/cmake/panda_armConfig-version.cmake
+Symlinking /home/sen/ros/hand_arm_ws/devel/lib/pkgconfig/panda_arm.pc

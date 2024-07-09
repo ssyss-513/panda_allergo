@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: allegro_hand_description
+    relative_path: common/allegro_hand_description_left.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/allegro_hand_left.srdf
+  CONFIG:
+    author_name: a
+    author_email: a@2.com
+    generated_timestamp: 1720165312

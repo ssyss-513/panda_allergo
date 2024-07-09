@@ -1,0 +1,1 @@
+/home/sen/ros/hand_arm_ws/devel/.private/robotiq_3finger/lib/pkgconfig/robotiq_3finger.pc

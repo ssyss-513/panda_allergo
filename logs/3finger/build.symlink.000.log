@@ -1,0 +1,3 @@
+Symlinking /home/sen/ros/hand_arm_ws/devel/share/3finger/cmake/3fingerConfig-version.cmake
+Symlinking /home/sen/ros/hand_arm_ws/devel/share/3finger/cmake/3fingerConfig.cmake
+Symlinking /home/sen/ros/hand_arm_ws/devel/lib/pkgconfig/3finger.pc

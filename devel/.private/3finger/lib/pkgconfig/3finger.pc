@@ -1,0 +1,8 @@
+prefix=/home/sen/ros/hand_arm_ws/devel/.private/3finger
+
+Name: 3finger
+Description: Description of 3finger
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
